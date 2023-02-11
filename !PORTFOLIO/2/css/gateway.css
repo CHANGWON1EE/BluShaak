@@ -1,0 +1,117 @@
+* {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div {
+    width: 50%;
+    height: 50%;
+}
+
+body {
+    background: #000;
+}
+
+.test {
+    margin: 0 auto;
+    background: url(../image/gateway/Art\ Design\ GIF\ by\ dualvoidanima\ -\ Find\ &\ Share\ on\ GIPHY.gif) center;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 0; */
+    /* transition: all 2s .2s ease-in-out; */
+    animation: test 7s ease-in-out infinite alternate;
+}
+
+/* .test:hover {
+    width: 1080px;
+    height: 1080px;
+    width: 969px;
+    height: 100%;
+    border-radius: 50%;
+    background-size: 1080px 1080px;
+} */
+
+@keyframes test {
+    0% {
+        border-radius: 0%;
+    }
+    25% {
+        border-radius: 50%;
+    }
+    50% {
+        border-radius: 50%
+    }
+
+    100% {
+        /* background: url(../image/gateway/Art\ Design\ GIF\ by\ dualvoidanima\ -\ Find\ &\ Share\ on\ GIPHY.gif) no-repeat center; */
+        border-radius: 50%;
+        width: 969px;
+        height: 100%;
+        background-size: 1080px 1080px;
+    }
+}
+
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f9f9f9;
+    /* color: #fafafa; */
+    /* color: #fff; */
+    font-size: 4em;
+    font-weight: 1000;
+    text-decoration: none;
+    text-shadow: 0 0 5px #f1f1f1,
+                 0 0 25px #fff,
+                 0 0 50px #fff;
+                 /* 0 0 75px #fff,
+                 0 0 100px #fff; */
+                 /* 0 0 25px #f1f1f1,
+                 0 0 50px #f1f1f1,
+                 0 0 75px #f1f1f1,
+                 0 0 100px #f1f1f1; */
+                 /* 0 0 25px #fe01b1,
+                 0 0 50px #fe01b1,
+                 0 0 75px #fe01b1,
+                 0 0 100px #fe01b1; */
+    /* animation: text 7s infinite ease-in-out; */
+}
+
+@keyframes text {
+    0% {
+        text-shadow: 0 0 5px #f1f1f1,
+                     0 0 25px #fff;
+    }
+    20% {
+        text-shadow: 0 0 5px #f1f1f1,
+                     0 0 25px #fff,
+                     0 0 50px #fff;
+    }
+    40% {
+        text-shadow: 0 0 5px #f1f1f1,
+                     0 0 25px #fff,
+                     0 0 50px #fff,
+                     0 0 75px #fff;
+    }
+    60% {
+        text-shadow: 0 0 5px #f1f1f1,
+                     0 0 25px #fff,
+                     0 0 50px #fff,
+                     0 0 75px #fff,
+                     0 0 100px #fff;
+    }
+    80% {
+        text-shadow: 0 0 5px #f1f1f1,
+                     0 0 25px #fff,
+                     0 0 50px #fff,
+                     0 0 75px #fff;
+    }
+    100% {
+        text-shadow: 0 0 5px #f1f1f1,
+                     0 0 25px #fff,
+    }
+}

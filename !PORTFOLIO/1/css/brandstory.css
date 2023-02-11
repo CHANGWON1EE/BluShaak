@@ -1,0 +1,545 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+    font-family: sans-serif;
+}
+
+/* ==================================================================================================== */
+/* << header >> */
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 0 20px -5px #000;
+}
+
+header .logo {
+    margin-left: 50px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* font-size: 1.7em; */
+    font-size: 2em;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ================================================== */
+/* < menu_btn > */
+
+.menu_btn {
+    position: absolute;
+    right: 75px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.toggle_open {
+    background:url(../image/main/adidas.png) 0/cover no-repeat;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 20px -5px #3287b9;
+    cursor: pointer;
+}
+
+/* ==================================================================================================== */
+/* << main >> */
+/* < toggle > */
+
+.toggle_wrap {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #99d9e8;
+    display: none;
+}
+
+.container_out {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.toggle_menu {
+    background: url(../image/main/bg.jpg) no-repeat center;
+    /* background: url(../image/main/bg.jpg) no-repeat 0/cover; */
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+}
+
+.toggle_menu_box {
+    width: 50%;
+    height: 50%;
+    margin: 0;
+    color: white;
+    transition: .2s;
+    box-sizing: border-box;
+    padding: 60px 0 0 12%;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.toggle_menu_box a {
+    color: white;
+    text-decoration: none;
+}
+
+.toggle_menu_box ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 20px;
+    line-height: 50px;
+    font-size: 1.2rem;
+}
+
+.toggle_menu_box > a {
+    display: inline-block;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    position: relative;
+}
+
+.toggle_menu_box > a:after {
+content: '';
+display: block;
+width: 100%;
+height: 1px;
+background: #fff;
+margin-top: -1px;
+}
+
+/* ================================================== */
+/* < toggle_bg > */
+
+.toggle_bg {
+    position: relative;
+    margin: 0;
+    flex: 1;
+    height: 100%;
+    background: url(../image/main/toggle_bg.png) no-repeat 0/cover;
+}
+
+.toggle_close {
+    background:url(../image/main/no-Man.png) 0/cover no-repeat;
+    position: absolute;
+    top: 70px;
+    right: 75px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 20px -5px #f8b646;
+    cursor: pointer;
+}
+
+.toggle_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    color: #fff;
+    list-style: none;
+}
+
+.toggle_info p, .franchise div:nth-child(2) {
+    padding: 0;
+    margin: 0;
+}
+
+/* ==================================================================================================== */
+/* << brandstory >> */
+
+.brandstory {
+    display: flex;
+    height: 100%;
+    align-items: end;
+}
+
+.brandstory .img_wrap,
+.brandstory .text_wrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+.brandstory .img_wrap {
+    align-items: end;
+    /* align-items: start; */
+}
+
+.brandstory .img_wrap strong {
+    color: #1c4788;
+}
+
+.brandstory .img_wrap strong:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 2px;
+    height: 15px;
+    background: #1c4788;
+    margin: 0 5px 3px;
+}
+
+.brandstory .img_wrap dd {
+    width: 480px;
+    border: 1px solid #ddd;
+    text-align: center;
+    /* padding: 20px; */
+    background: url(../image/main/logo_bg.jpg);
+}
+
+.brandstory .text_wrap strong {
+    color: #1c4788;
+}
+
+.brandstory .text_wrap .sub_title {
+    font-size: 2.3em;
+    font-weight: 600;
+    color: #1c4788;
+}
+
+.padding_right50 {
+    padding-right: 50px;
+}
+
+.padding_left50 {
+    padding-left: 50px;
+}
+
+
+/* ================================================== */
+/* << footer >> */
+
+.footer {
+    height: 25%;
+    color: white;
+}
+
+.footer_container {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.footer_info {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.tel span {
+    font-size: 2.20em !important;
+    font-weight: 500;
+    color: #60aad7;
+    line-height: 1.2em;
+}
+
+.franchise {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.franchise div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 200px;
+    height: 50px;
+    margin: 5px 0;
+}
+
+.franchise .inquiry {
+    background-color: #3287b9;
+}
+
+.franchise .inquiry a {
+    text-decoration: none;
+}
+
+.franchise .procedure {
+    background-color: #2e4c81;
+}
+
+.franchise .procedure a {
+    text-decoration: none;
+}
+
+/* ==================================================================================================== */
+/* << responsive web >> */
+
+@media screen and (min-width: 1501px) {
+
+
+}
+
+/* ==================================================================================================== */
+
+@media screen and (max-width: 1000px) {
+
+
+}
+
+/* ==================================================================================================== */
+
+@media screen and (max-width: 1180px) {
+
+/* ================================================== */
+/* < toggle > */
+
+    .menu_btn {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .toggle_menu_box ul {
+        font-size: 1.2rem;
+    }
+
+    .toggle_menu_box > a {
+        font-size: 2rem;
+    }
+
+    .toggle_close {
+        right: 0;
+        top: 0;
+        top: 55px;
+    }
+
+    .toggle_bg {
+        display: none;
+    }
+
+/* ================================================== */
+/* < footer > */
+
+    .footer_container .franchise .inquiry {
+        margin: 0px;
+    }    
+}
+
+/* ==================================================================================================== */
+
+@media screen and (max-width: 1070px) {
+
+    html, body {
+        height: 115%;
+    }
+
+    header {
+        /* height: 20%; */
+        background: none;
+        box-shadow: none;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header ul {
+        display: none;
+    }
+    
+/* ================================================== */
+/* < toggle > */
+
+    .menu_btn {
+        right: 0;
+        top: 0;
+        transform: translateY(0);
+    }
+
+    .toggle_close {
+        right: 0;
+        top: 0;
+    }
+
+    .toggle_bg {
+        display: none;
+    }
+
+/* ================================================== */
+/* < brandstory > */    
+
+    .brandstory {
+        flex-direction: column;
+    }
+
+    .brandstory .img_wrap,
+    .brandstory .text_wrap {
+        width: 100%;
+    }
+
+    .brandstory .img_wrap {
+        align-items: center;
+    }
+
+    .brandstory .img_wrap dd {
+        width: 480px;
+    }
+
+/* ================================================== */
+/* < footer > */
+
+    .footer {
+        height: 20%;
+    }
+
+    .footer_container .contact {
+        display: none;
+    }
+
+    .footer_container {
+        flex-direction: column;
+    }    
+
+    .footer_container .franchise {
+        flex-direction: row;
+    }
+
+    .footer_container .franchise .inquiry {
+        margin: 0px;
+    }   
+}
+
+/* ==================================================================================================== */
+
+@media screen and (max-width: 820px) {
+
+}
+
+/* ==================================================================================================== */
+
+@media screen and (max-width: 600px) {
+    html, body {
+        height: 130%;
+    }
+    
+/* ================================================== */
+/* < header > */
+
+    header {
+        height: 20%;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    .menu_btn {
+        right: 0;
+        top: 0;
+        transform: translateY(0);
+    }
+
+    .toggle_menu_box ul {
+        font-size: 1rem;
+    }
+
+    .toggle_menu_box > a {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .toggle_close {
+        right: 0;
+        top: 0;
+    }
+
+/* ================================================== */
+/* < brandstory > */    
+
+    .brandstory .img_wrap dd {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .img_wrap img {
+        width: 150px;
+    }
+
+    .padding_right50 {
+        padding: 0;
+    }
+
+    .padding_left50 {
+        padding: 0;
+    }
+
+    .text_wrap .sub_title {
+        padding: 0;
+    }
+}
+
+/* ==================================================================================================== */
+
+@media screen and (max-width: 390px) {
+
+/* ================================================== */
+/* < footer > */
+
+    .footer {
+        height: 15%;
+    }
+
+    .footer_container {
+        flex-direction: column;
+        justify-content: end;
+    }
+    
+    .footer .footer_info {
+        display: none;
+    }   
+
+    .footer .contact {
+        display: block;
+    }
+
+    .footer .franchise .inquiry,
+    .footer .franchise .procedure {
+        width: 180px;
+    }
+}

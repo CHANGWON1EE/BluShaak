@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salow Studios</title>
+    <style>
+        .neon-text {
+            color: #fe01b1;
+            left: 50pt;
+            position: absolute;
+            font-size: 40pt;
+            text-shadow: 0 0 5px #fe01b1,
+                         0 0 25px #fe01b1,
+                         0 0 50px #fe01b1,
+                         0 0 75px #fe01b1,
+                         0 0 100px #fe01b1;
+            animation: wobble 4s linear infinite;             
+        }
+        @keyframes wobble {
+            0% {
+                transform:  translate(0%);
+            }
+            15% {
+                transform:  translate(-25%) rotate(-5deg);
+            }
+            30% {
+                transform:  translate(20%) rotate(3deg);
+            }
+            45% {
+                transform:  translate(-15%) rotate(-3deg);
+            }
+            60% {
+                transform:  translate(10%) rotate(2deg);
+            }
+            75% {
+                transform:  translate(-5%) rotate(-1deg);
+            }
+            100% {
+                transform:  translate(0%);
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Glowing Neon Text</h1>
+    <div class="neon-text">Neon Text</div>
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+.titlebox {
+    background-color: orange;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; */
+
+    padding: 50px;
+}
+.titlebox>h1 {
+    color: #fff;
+    font-size:3rem;
+    text-align: center;
+}
+
+.inputbox {
+    display: flex;
+}
+
+/* 인풋 중에서 타입만 골라서 코드주기
+[type='text'] */
+input {
+    width: 70%;
+    background-color: #FFF;
+    
+    /* 테두리를 나타냄 */
+    border: 0;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.inputbox button {
+    width: 30%;
+    background-color: #eee;
+    border: 0;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+/* .todolist li {
+    position: relative;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+} */
+
+/* 이런 방법도 있다  */
+ .todolist li {
+    padding: 15px;
+    padding-left: 30px;
+    font-size: 1.3rem;
+}
+
+.todolist li:nth-child(2n) {
+    background-color:#fafafa;
+}
+
+.todolist li:nth-child(2n-1) {
+    background-color:#ccc;
+}
+
+/* 가상요소로 html에 없는것을 만들 수 있다 */
+.todolist li::after {
+        position: absolute;
+        right: 20px;
+        content: 'x';
+}
+
+ .todolist li::before {
+    position: absolute;
+    left: 20px;
+    content: 'x';
+    color: #fff;
+} 
+
+.todolist li.check::after {
+    background-color:#eee;
+}
+
+/* li중에서 체크를 가진애만 핫핑크를 줘 */
+.todolist li.check {
+    background-color:hotpink;
+    color:#fff;
+    text-decoration: line-through;
+}
+
+/* .list {
+    background-color: #eee;
+    width: 1000px;
+    border: 0;
+    font-size: 1rem;
+    padding: 15px;
+    padding-left: 30px;
+}
+.hit {
+    background-color: darkgray;
+    width: 1000px;
+    border: 0;
+    font-size: 1rem;
+    padding: 15px;
+    padding-left: 30px;
+} */
